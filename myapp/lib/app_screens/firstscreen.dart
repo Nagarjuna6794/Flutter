@@ -11,8 +11,7 @@ class Firstscreen extends StatelessWidget {
      );
     return Material(
      color: Colors.lightBlue,
-     child: Center(child:
-     text,
+     child: Center(child:text,
    ),
   );
   }
