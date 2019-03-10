@@ -4,7 +4,9 @@ import 'package:myapp/ui_widgets/home.dart';
 import 'package:myapp/ui_widgets/table_row_colum.dart';
 import 'package:myapp/ui_widgets/imagesexample.dart';
 import 'package:myapp/ui_widgets/raisedbuttonalertdialog.dart';
-import 'package:myapp/ui_widgets/listview.dart';
+import 'package:myapp/ui_widgets/static_listview.dart';
+import 'package:myapp/ui_widgets/dynamic_listview.dart';
+import 'package:myapp/ui_widgets/snackbar_example.dart';
 
 
 void main(){
@@ -12,8 +14,15 @@ void main(){
    debugShowCheckedModeBanner: false,
    title: "Exploring listview",
    home: Scaffold(
-     appBar: AppBar(title: Text("Basic List View"),),
-     body: ListViewWidgets(),
+     appBar: AppBar(title: Text("Dynamic List View"),),
+     body: SnackBarExample(),
+     floatingActionButton: FloatingActionButton(
+       onPressed: (){
+         debugPrint("FAB Clicked");
+       },
+       child: Icon(Icons.add),
+       tooltip: 'Add One more item',
+     ),
    ),
  ));
 }
