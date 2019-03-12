@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 class SnackBarExample extends StatelessWidget{
  @override
   Widget build(BuildContext context) {
-    return getListView();
+   return Scaffold(
+      appBar: AppBar(
+        title: Text("Snack Bar Example"),),
+        body: getListView(),
+    );
   }
 
 }

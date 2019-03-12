@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 class  ListViewWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return getListview();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Static List View"),),
+        body: getListview(),
+    );
   }
   
 }

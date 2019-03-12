@@ -14,8 +14,8 @@ void main(){
    debugShowCheckedModeBanner: false,
    title: "Exploring listview",
    home: Scaffold(
-     appBar: AppBar(title: Text("Dynamic List View"),),
-     body: SnackBarExample(),
+     appBar: AppBar(title: Text("Examples"),),
+     body: Home(),
      floatingActionButton: FloatingActionButton(
        onPressed: (){
          debugPrint("FAB Clicked");

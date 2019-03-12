@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 class DynamicListView extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return getListView();
+   return Scaffold(
+      appBar: AppBar(
+        title: Text("Dynamic List View"),),
+        body: getListView(),
+    );
   }
 
 }
