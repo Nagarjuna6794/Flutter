@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/ui_widgets/dynamic_listview.dart';
 import 'package:myapp/ui_widgets/imagesexample.dart';
+import 'package:myapp/ui_widgets/jsonparsingexample.dart';
 import 'package:myapp/ui_widgets/raisedbuttonalertdialog.dart';
 import 'package:myapp/ui_widgets/snackbar_example.dart';
 import 'package:myapp/ui_widgets/static_listview.dart';
@@ -90,6 +91,16 @@ Widget getListView(BuildContext context) {
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return TableRowColumn();
+          }));
+        },
+      ),ListTile(
+        leading: Icon(Icons.image),
+        title: Text("Json Parsing Example"),
+        subtitle: Text("Open"),
+        trailing: Icon(Icons.arrow_left),
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return JsonParsingExample();
           }));
         },
       ),
