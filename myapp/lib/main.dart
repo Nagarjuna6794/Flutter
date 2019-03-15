@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/app_screens/firstscreen.dart';
 import 'package:myapp/ui_widgets/home.dart';
-import 'package:myapp/ui_widgets/table_row_colum.dart';
-import 'package:myapp/ui_widgets/imagesexample.dart';
-import 'package:myapp/ui_widgets/raisedbuttonalertdialog.dart';
-import 'package:myapp/ui_widgets/static_listview.dart';
-import 'package:myapp/ui_widgets/dynamic_listview.dart';
-import 'package:myapp/ui_widgets/snackbar_example.dart';
+import 'package:myapp/ui_widgets/newnavigationpage.dart';
 
 
 void main(){
  runApp(MaterialApp(
    debugShowCheckedModeBanner: false,
    title: "Exploring listview",
+   theme: ThemeData(primarySwatch: Colors.green),
+   routes: <String,WidgetBuilder>{
+     "/a":(BuildContext context)=>new NewPage(),
+   },
    home: Scaffold(
      appBar: AppBar(title: Text("Examples"),),
      body: Home(),
