@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/ui_widgets/bottombar_view.dart';
+import 'package:myapp/ui_widgets/carouselview.dart';
+import 'package:myapp/ui_widgets/carousellib.dart';
 import 'package:myapp/ui_widgets/checkboxexample.dart';
 import 'package:myapp/ui_widgets/dynamic_listview.dart';
 import 'package:myapp/ui_widgets/imagesexample.dart';
@@ -162,6 +164,28 @@ Widget getListView(BuildContext context) {
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return CheckBoxExample();
+          }));
+        },
+      ),
+      ListTile(
+        leading: Icon(Icons.image),
+        title: Text("Carousel View Example"),
+        subtitle: Text("Open"),
+        trailing: Icon(Icons.arrow_left),
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return CarouselViewExample();
+          }));
+        },
+      ),
+       ListTile(
+        leading: Icon(Icons.image),
+        title: Text("Carousel View Lib Example"),
+        subtitle: Text("Open"),
+        trailing: Icon(Icons.arrow_left),
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return CarouselViewLibExample();
           }));
         },
       ),

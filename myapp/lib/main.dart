@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/ui_widgets/home.dart';
 import 'package:myapp/ui_widgets/newnavigationpage.dart';
-
+import 'package:device_id/device_id.dart';
 
 void main(){
  runApp(MaterialApp(
@@ -15,8 +15,9 @@ void main(){
      appBar: AppBar(title: Text("Examples"),),
      body: Home(),
      floatingActionButton: FloatingActionButton(
-       onPressed: (){
-         debugPrint("FAB Clicked");
+       onPressed: () async {
+         String deviceId=await DeviceId.getID;
+         debugPrint("FAB Clicked "+deviceId);
        },
        child: Icon(Icons.add),
        tooltip: 'Add One more item',

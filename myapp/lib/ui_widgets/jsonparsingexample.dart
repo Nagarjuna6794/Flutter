@@ -6,16 +6,16 @@ import 'dart:convert';
 class JsonParsingExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return  MaterialApp(
         title: 'Json Parsing Example',
        // theme: new ThemeData(primarySwatch: Colors.blue),
-        home: new MyJsonView());
+        home:  MyJsonView());
   }
 }
 
 class MyJsonView extends StatefulWidget {
   @override
-  _MyJsonPage createState() => new _MyJsonPage();
+  _MyJsonPage createState() =>  _MyJsonPage();
 }
 
 class _MyJsonPage extends State<MyJsonView> {
